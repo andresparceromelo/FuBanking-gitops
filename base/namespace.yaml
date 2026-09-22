@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: fubanking-dev
+  labels:
+    app.kubernetes.io/part-of: fubanking
+    environment: dev
