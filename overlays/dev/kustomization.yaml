@@ -6,7 +6,7 @@ resources:
 images:
   - name: abedoya923/fubanking-backend
     newName: abedoya923/fubanking-backend
-    newTag: "latest"
+    newTag: 9
   - name: abedoya923/fubanking-frontend
     newName: abedoya923/fubanking-frontend
-    newTag: "latest"
+    newTag: 9
