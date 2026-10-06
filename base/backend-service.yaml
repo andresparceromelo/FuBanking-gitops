@@ -5,10 +5,13 @@ metadata:
   labels:
     app: fubanking-backend
 spec:
-  type: ClusterIP
+  # NodePort para demo local: visible en `minikube service list`
+  # y accesible sin port-forward (http://<minikube-ip>:30301).
+  type: NodePort
   selector:
     app: fubanking-backend
   ports:
     - name: http
       port: 3001
       targetPort: 3001
+      nodePort: 30301
